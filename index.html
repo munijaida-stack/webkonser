@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riuh Raya Fest 2026 - Resonance of Youth</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <i class="bi bi-stars"></i> RIUHRAYA<span>FEST</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lineup">Line-up</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tiket">Tiket</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        <li class="nav-item ms-lg-2">
+          <button id="themeToggle" class="btn btn-theme" title="Ganti tema">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<header id="home" class="hero d-flex align-items-center">
+  <div class="hero-glow"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <span class="badge-eyebrow">27 - 28 NOVEMBER 2026 &middot; BANDUNG</span>
+        <h1 class="hero-title">SUARA &amp; CERITA <br>DALAM SATU <span>RAYA</span></h1>
+        <p class="hero-desc">
+          RiuhRaya adalah ruang tempat musik, cerita, dan manusia bertemu.
+          Sebuah perayaan yang menghadirkan musisi, komunitas kreatif, serta ribuan suara dalam satu frekuensi yang sama.
+          Bukan sekadar festival, melainkan kenangan yang diciptakan bersama.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="#tiket" class="btn btn-cta btn-lg">Beli Tiket Sekarang</a>
+          <a href="#tentang" class="btn btn-outline-cta btn-lg">Lihat Detail Acara</a>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown-box d-flex gap-3 flex-wrap" id="countdown">
+          <div class="cd-item"><span id="cd-days">00</span><small>Hari</small></div>
+          <div class="cd-item"><span id="cd-hours">00</span><small>Jam</small></div>
+          <div class="cd-item"><span id="cd-minutes">00</span><small>Menit</small></div>
+          <div class="cd-item"><span id="cd-seconds">00</span><small>Detik</small></div>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center mt-5 mt-lg-0">
+        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=700&auto=format&fit=crop&q=60"
+             alt="Suasana konser musik festival" class="hero-img img-fluid">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== SECTION TENTANG ===== -->
+<section id="tentang" class="section-pad bg-dark-custom">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="section-eyebrow">Tentang Event</p>
+        <h2 class="section-title">Apa itu <span class="text-neon">RIUHRAYA?</span></h2>
+        <p class="section-body">
+          <strong>RIUHRAYAFEST 2026 (Resonance of Youth)</strong> adalah festival musik dua hari yang hadir di Kota Bandung, menampilkan deretan artis-artis terbaik Indonesia dari berbagai genre — indie pop, alternative rock, folk, hingga pop mainstream.
+        </p>
+        <p class="section-body">
+          Berlangsung pada <strong>27–28 November 2026</strong> di <strong>SECAPA AD, Bandung</strong>, RIUHRAYAFEST menghadirkan pengalaman festival yang tak terlupakan dengan atmosfer yang hidup, komunitas penonton yang passionate, dan penampilan live yang luar biasa.
+        </p>
+        <div class="row g-3 mt-2">
+          <div class="col-6">
+            <div class="stat-card">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Hari Festival</span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Artis Tampil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-visual">
+          <div class="about-badge">
+            <i class="bi bi-music-note-beamed"></i>
+            <span>Resonance of Youth</span>
+          </div>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="bi bi-calendar-event text-neon"></i>
+              <div>
+                <strong>Tanggal</strong>
+                <p>27–28 November 2026</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-geo-alt text-neon"></i>
+              <div>
+                <strong>Lokasi</strong>
+                <p>SECAPA AD, Bandung</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-clock text-neon"></i>
+              <div>
+                <strong>Jam Buka</strong>
+                <p>13.00 – 23.00 WIB</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-ticket-perforated text-neon"></i>
+              <div>
+                <strong>Tiket</strong>
+                <p>Snaptix &amp; riuhrayafest.id</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LINE-UP / PRODUK SECTION ===== -->
+<section id="lineup" class="section-pad bg-darker">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow">Artis &amp; Performer</p>
+      <h2 class="section-title">Line-Up <span class="text-neon">RIUHRAYAFEST 2026</span></h2>
+      <p class="text-muted-custom">Puluhan artis terbaik Indonesia siap menghibur kamu selama dua hari penuh.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+      <button class="btn btn-filter active" data-day="all">Semua</button>
+      <button class="btn btn-filter" data-day="day1">Day 1 – 27 November</button>
+      <button class="btn btn-filter" data-day="day2">Day 2 – 28 November</button>
+    </div>
+
+    <div class="row g-4" id="lineupGrid">
+      <!-- Day 1 Artists -->
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/the-panturas.jpg.jpg" alt="The Panturas" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">The Panturas</h5>
+            <p class="card-text">Komplotan surf rock asal Jatinangor yang membawa kesegaran musik pantai berbalut distorsi dan cerita-cerita jenaka bin tragis.</p>
+            <span class="genre-tag">Surf Rock</span>
+            <button class="btn btn-detail mt-2" data-name="The Panturas" data-genre="Surf Rock" data-img="img/the-panturas.jpg.jpg" data-desc="Komplotan surf rock asal Jatinangor yang membawa kesegaran musik pantai berbalut distorsi dan cerita-cerita jenaka bin tragis." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/kale.jpg.jpg" alt="Kale" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Kalè</h5>
+            <p class="card-text">Proyek musik asal Bandung yang dikenal dengan lapisan gitar penuh reverb dan vokal yang mengawang.</p>
+            <span class="genre-tag">Dream Pop / Shoegaze</span>
+            <button class="btn btn-detail mt-2" data-name="Kalè" data-genre="Dream Pop / Shoegaze" data-img="img/kale.jpg.jpg" data-desc="Proyek musik dream pop/shoegaze asal Bandung yang dikenal dengan lapisan gitar penuh reverb dan vokal yang mengawang, menghadirkan atmosfer melankolis." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/the-adams.jpg.jpg" alt="The Adams" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">The Adams</h5>
+            <p class="card-text">Empu power pop ibu kota dengan harmoni vokal khas dan lagu-lagu legendaris yang memicu kor massal di setiap panggung.</p>
+            <span class="genre-tag">Power Pop / Indie Pop</span>
+            <button class="btn btn-detail mt-2" data-name="The Adams" data-genre="Power Pop / Indie Pop" data-img="img/the-adams.jpg.jpg" data-desc="Empu power pop ibu kota dengan harmoni vokal khas dan lagu-lagu legendaris yang selalu memicu kor massal di setiap panggung." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/skandal.jpg.jpg" alt="Skandal" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Skandal</h5>
+            <p class="card-text">Band pop asal Yogyakarta yang membawakan musik penuh energi dengan hook gitar catchy dan nuansa alternatif era 90-an.</p>
+            <span class="genre-tag">Indie Rock / Power Pop</span>
+            <button class="btn btn-detail mt-2" data-name="Skandal" data-genre="Indie Rock / Power Pop" data-img="img/skandal.jpg.jpg" data-desc="Band pop asal Yogyakarta yang membawakan musik penuh energi dengan hook gitar yang catchy dan nuansa alternatif era 90-an yang kental." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/alkateri.jpg.jpg" alt="Alkateri" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Alkateri</h5>
+            <p class="card-text">Unit indie rock/pop asal Bandung yang memadukan aransemen gitar catchy, ketukan dinamis, dan lirik melankolis.</p>
+            <span class="genre-tag">Indie Pop / Indie Rock</span>
+            <button class="btn btn-detail mt-2" data-name="Alkateri" data-genre="Indie Pop / Indie Rock" data-img="img/alkateri.jpg.jpg" data-desc="Unit indie rock/pop asal Bandung yang memadukan aransemen gitar yang catchy, ketukan dinamis, dan lirik melankolis tentang dinamika muda-mudi kota." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/eleventwelfth.jpg.jpg" alt="Eleventwelfth" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Eleventwelfth</h5>
+            <p class="card-text">Kolektif indie rock/emo yang memadukan melodi gitar subtil dan kompleks dengan lirik melankolis-introspektif.</p>
+            <span class="genre-tag">Indie Rock / Emo</span>
+            <button class="btn btn-detail mt-2" data-name="Eleventwelfth" data-genre="Indie Rock / Emo" data-img="img/eleventwelfth.jpg.jpg" data-desc="Kolektif indie rock/emo yang memadukan melodi gitar subtil yang kompleks dengan lirik melankolis-introspektif, menghadirkan atmosfer musik yang intim sekaligus sinematik." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day1">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day1-header">
+            <img src="img/banda-neira.jpg.jpg" alt="Banda Neira" class="artist-photo">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Banda Neira</h5>
+            <p class="card-text">Duo folk indie yang kembali meramaikan panggung dengan melodi akustik hangat dan lirik penuh makna.</p>
+            <span class="genre-tag">Folk</span>
+            <button class="btn btn-detail mt-2" data-name="Banda Neira" data-genre="Folk" data-img="img/banda-neira.jpg.jpg" data-desc="Duo folk indie yang kembali meramaikan panggung dengan melodi akustik yang hangat dan lirik penuh makna." data-day="Day 1 - 27 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 2 Artists -->
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day2">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day2-header">
+            <img src="img/hindia.jpg.jpg" alt="Hindia" class="artist-photo">
+            <span class="day-badge day2-badge">Day 2</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hindia</h5>
+            <p class="card-text">Musisi indie pop dengan narasi lagu reflektif dan produksi musik kaya, dikenal lewat album "Menari dengan Bayangan".</p>
+            <span class="genre-tag">Indie Pop</span>
+            <button class="btn btn-detail mt-2" data-name="Hindia" data-genre="Indie Pop" data-img="img/hindia.jpg.jpg" data-desc="Musisi indie pop dengan narasi lagu yang reflektif dan produksi musik yang kaya, dikenal lewat album Menari dengan Bayangan." data-day="Day 2 - 28 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day2">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day2-header">
+            <img src="img/nosstress.jpg.jpg" alt="Nosstress" class="artist-photo">
+            <span class="day-badge day2-badge">Day 2</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nosstress</h5>
+            <p class="card-text">Trio folk asal Bali yang menyuarakan kritik sosial dan lingkungan lewat petikan gitar akustik yang sederhana namun mendalam.</p>
+            <span class="genre-tag">Folk / Acoustic</span>
+            <button class="btn btn-detail mt-2" data-name="Nosstress" data-genre="Folk / Acoustic" data-img="img/nosstress.jpg.jpg" data-desc="Trio folk asal Bali yang menyuarakan kritik sosial, lingkungan, dan cerita kehidupan lewat petikan gitar akustik yang sederhana namun mendalam." data-day="Day 2 - 28 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day2">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day2-header">
+            <img src="img/murphy-radio.jpg.jpg" alt="Murphy Radio" class="artist-photo">
+            <span class="day-badge day2-badge">Day 2</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Murphy Radio</h5>
+            <p class="card-text">Band math rock instrumental yang menyuguhkan komposisi nada rumit, melodi gitar ceria, dan ketukan yang dinamis.</p>
+            <span class="genre-tag">Math Rock / Instrumental</span>
+            <button class="btn btn-detail mt-2" data-name="Murphy Radio" data-genre="Math Rock / Instrumental" data-img="img/murphy-radio.jpg.jpg" data-desc="Band math rock instrumental yang menyuguhkan komposisi nada rumit, melodi gitar yang ceria, dan ketukan yang dinamis." data-day="Day 2 - 28 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day2">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day2-header">
+            <img src="img/feast.jpg.jpg" alt=".Feast" class="artist-photo">
+            <span class="day-badge day2-badge">Day 2</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">.Feast</h5>
+            <p class="card-text">Band alternative rock dengan lirik kritis dan sosial yang mengajak pendengar berpikir sekaligus menikmati musik keras.</p>
+            <span class="genre-tag">Alternative Rock</span>
+            <button class="btn btn-detail mt-2" data-name=".Feast" data-genre="Alternative Rock" data-img="img/feast.jpg.jpg" data-desc="Band alternative rock dengan lirik kritis dan sosial yang mengajak pendengar untuk berpikir sekaligus menikmati musik keras." data-day="Day 2 - 28 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day2">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day2-header">
+            <img src="img/fstvlst.jpg.jpg" alt="Fstvlst" class="artist-photo">
+            <span class="day-badge day2-badge">Day 2</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fstvlst</h5>
+            <p class="card-text">Unit rock asal Yogyakarta yang memadukan musik bertenaga dengan lirik puitis sarat kritik seni dan sosial.</p>
+            <span class="genre-tag">Alternative Rock / Indie Rock</span>
+            <button class="btn btn-detail mt-2" data-name="Fstvlst" data-genre="Alternative Rock / Indie Rock" data-img="img/fstvlst.jpg.jpg" data-desc="Unit rock asal Yogyakarta yang memadukan musik bertenaga dengan lirik puitis sarat kritik seni dan sosial, serta aksi panggung yang teatrikal." data-day="Day 2 - 28 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 lineup-card-wrap" data-day="day2">
+        <div class="card artist-card h-100">
+          <div class="card-artist-header day2-header">
+            <img src="img/perunggu.jpg.jpg" alt="Perunggu" class="artist-photo">
+            <span class="day-badge day2-badge">Day 2</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Perunggu</h5>
+            <p class="card-text">Band indie dengan sound melankolis khas, menghadirkan karya-karya yang dekat dengan keseharian anak muda Indonesia.</p>
+            <span class="genre-tag">Indie</span>
+            <button class="btn btn-detail mt-2" data-name="Perunggu" data-genre="Indie" data-img="img/perunggu.jpg.jpg" data-desc="Band indie dengan sound melankolis yang khas, menghadirkan karya-karya yang dekat dengan keseharian anak muda Indonesia." data-day="Day 2 - 28 November 2026">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail popup -->
+    <div id="artistDetail" class="artist-detail-popup d-none">
+      <div class="artist-detail-inner">
+        <button id="closeDetail" class="close-detail-btn"><i class="bi bi-x-lg"></i></button>
+        <div id="artistDetailContent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION TIKET / KALKULATOR HARGA ===== -->
+<section id="tiket" class="section-pad bg-dark-custom">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow">Harga Tiket</p>
+      <h2 class="section-title">Pilih <span class="text-neon">Tiket</span> Kamu</h2>
+      <p class="text-muted-custom">Amankan tiketmu sekarang sebelum kehabisan!</p>
+    </div>
+
+    <div class="row g-4 justify-content-center mb-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="card ticket-card">
+          <div class="ticket-header">
+            <span class="ticket-type">Day 1 Pass</span>
+            <div class="ticket-price-wrap">
+              <span class="ticket-price">Rp 85.000</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="ticket-features">
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Akses 27 November 2026</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Seluruh Stage Day 1</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Area Food &amp; Beverage</li>
+              <li><i class="bi bi-x-circle text-muted"></i> Day 2 Performance</li>
+            </ul>
+            <a href="#kontak" class="btn btn-outline-neon w-100">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card ticket-card ticket-featured">
+          <div class="ticket-popular-badge">TERLARIS</div>
+          <div class="ticket-header featured-header">
+            <span class="ticket-type">2 Days Pass</span>
+            <div class="ticket-price-wrap">
+              <span class="ticket-price">Rp 170.000</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="ticket-features">
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Akses 27 &amp; 28 November</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Seluruh Stage 2 Hari</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Area Food &amp; Beverage</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Free RiuhRaya Merchandise</li>
+            </ul>
+            <a href="#kontak" class="btn btn-neon w-100">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card ticket-card">
+          <div class="ticket-header">
+            <span class="ticket-type">Day 2 Pass</span>
+            <div class="ticket-price-wrap">
+              <span class="ticket-price">Rp 85.000</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="ticket-features">
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Akses 28 November 2026</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Seluruh Stage Day 2</li>
+              <li><i class="bi bi-check-circle-fill text-neon"></i> Area Food &amp; Beverage</li>
+              <li><i class="bi bi-x-circle text-muted"></i> Day 1 Performance</li>
+            </ul>
+            <a href="#kontak" class="btn btn-outline-neon w-100">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kalkulator Harga Sederhana -->
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="ticket-calc p-4 p-md-5 rounded-4">
+          <h4 class="mb-3 text-neon">Simulasi Harga Tiket</h4>
+          <p class="text-muted-custom mb-4">Pilih kategori tiket dan jumlahnya, total pembayaran akan terhitung otomatis.</p>
+          <div class="row g-3 align-items-end">
+            <div class="col-md-6">
+              <label for="ticketType" class="form-label">Kategori Tiket</label>
+              <select id="ticketType" class="form-select">
+                <option value="85000">Day 1 / Day 2 - Rp85.000</option>
+                <option value="170000">2 Days Pass - Rp170.000</option>
+                <option value="400000">VVIP 2 Days - Rp400.000</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="ticketQty" class="form-label">Jumlah</label>
+              <input type="number" id="ticketQty" class="form-control" value="1" min="1" max="10">
+            </div>
+            <div class="col-md-3">
+              <button id="btnHitung" class="btn btn-cta w-100" type="button">Hitung</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="total-label">Total Bayar</span>
+            <span class="total-value" id="totalHarga">Rp85.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION GALERI ===== -->
+<section id="galeri" class="section-pad bg-darker">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow">Galeri</p>
+      <h2 class="section-title">Momen <span class="text-neon">Tahun Lalu</span></h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-4">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=500&auto=format&fit=crop&q=60" alt="Penonton konser bersorak">
+      </div>
+      <div class="col-6 col-md-4">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=500&auto=format&fit=crop&q=60" alt="Panggung dengan lampu sorot">
+      </div>
+      <div class="col-6 col-md-4">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500&auto=format&fit=crop&q=60" alt="Penonton festival musik dari atas">
+      </div>
+      <div class="col-6 col-md-4">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&auto=format&fit=crop&q=60" alt="Gitaris tampil di panggung">
+      </div>
+      <div class="col-6 col-md-4">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=500&auto=format&fit=crop&q=60" alt="Kerumunan penonton festival saat malam">
+      </div>
+      <div class="col-6 col-md-4">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1543007631-283050bb3e8c?w=500&auto=format&fit=crop&q=60" alt="DJ tampil dengan lampu warna warni">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION FORM PENDAFTARAN / KONTAK ===== -->
+<section id="kontak" class="section-pad bg-dark-custom">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <p class="section-eyebrow">Daftar &amp; Kontak</p>
+        <h2 class="section-title">Amankan <span class="text-neon">Tiketmu</span> Sekarang</h2>
+        <p class="section-body">
+          Isi form di samping untuk pra-pendaftaran tiket dan dapatkan info terbaru
+          seputar RiuhRaya Fest 2026 langsung ke email dan WhatsApp-mu.
+        </p>
+        <ul class="contact-list list-unstyled">
+          <li><i class="bi bi-geo-alt-fill"></i> SECAPA AD, Bandung, Jawa Barat</li>
+          <li><i class="bi bi-envelope-fill"></i> halo@riuhrayafest.id</li>
+          <li><i class="bi bi-whatsapp"></i> +62 812-3456-7890</li>
+        </ul>
+        <!-- Live Preview Input -->
+        <div class="live-preview-box mt-4">
+          <p class="mb-0" id="livePreview">Halo, sahabat Riuh Raya! 👋</p>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form id="regForm" class="reg-form p-4 p-md-5 rounded-4" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap">
+              <small class="error-text" id="errNama"></small>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="nama@email.com">
+              <small class="error-text" id="errEmail"></small>
+            </div>
+            <div class="col-md-6">
+              <label for="hp" class="form-label">Nomor HP</label>
+              <input type="tel" class="form-control" id="hp" placeholder="08xxxxxxxxxx">
+              <small class="error-text" id="errHp"></small>
+            </div>
+            <div class="col-md-6">
+              <label for="kategori" class="form-label">Kategori Tiket</label>
+              <select class="form-select" id="kategori">
+                <option value="">-- Pilih Kategori --</option>
+                <option value="Day 1 Pass">Day 1 Pass</option>
+                <option value="Day 2 Pass">Day 2 Pass</option>
+                <option value="2 Days Pass">2 Days Pass</option>
+              </select>
+              <small class="error-text" id="errKategori"></small>
+            </div>
+            <div class="col-12">
+              <label for="pesan" class="form-label">Pesan / Pertanyaan</label>
+              <textarea class="form-control" id="pesan" rows="3" placeholder="Tulis pesan atau pertanyaanmu (opsional)"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-cta btn-lg w-100">Kirim Pendaftaran</button>
+            </div>
+            <div class="col-12">
+              <div id="formAlert" class="alert d-none mt-2" role="alert"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5 class="footer-brand"><i class="bi bi-stars"></i> RIUHRAYA<span>FEST</span></h5>
+        <p>SUARA &amp; CERITA DALAM SATU RAYA. Bandung, 27–28 November 2026.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6>Tautan Cepat</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#lineup">Line-up</a></li>
+          <li><a href="#tiket">Tiket</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>Data Project</h6>
+        <ul class="list-unstyled footer-links">
+          <li>Nama Website: Riuh Raya Fest</li>
+          <li>Nama Mahasiswa: Muni' Jaida</li>
+          <li>NPM: 125111015</li>
+          <li>Program Studi: Informatika</li>
+          <li>Tahun: 2026</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center mb-0 copyright">&copy; 2026 Riuh Raya Fest. Project UAS Pemrograman Web 1.</p>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scrollTop" class="btn-scroll-top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
